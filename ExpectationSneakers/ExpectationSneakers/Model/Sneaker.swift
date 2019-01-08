@@ -12,6 +12,12 @@ struct Sneaker{
     let name: String
     let image: UIImage
     let prices: Double
+    let genre: String
     let description: String
+    let sizes : [Size]
+}
+
+struct Size {
+    let size: String
 }
 

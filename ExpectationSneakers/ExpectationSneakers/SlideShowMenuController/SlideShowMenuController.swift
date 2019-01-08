@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     
     @IBOutlet weak var slidePhotoCView: UICollectionView!
@@ -16,8 +16,6 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
     @IBOutlet weak var topSellCView: UICollectionView!
     
     let photosArray:[String] = ["Jordan1","Jordan3","Jordan4","Versace","Puma"]
-    
-    let topCellArray:[String] = ["Jordan1","Jordan3","Jordan4","Versace","Puma","Jordan1","Jordan3"]
     
     var topSellSneaker = [Sneaker]()
     
@@ -33,7 +31,8 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
         topSellCView.delegate = self
         topSellCView.dataSource = self
         
-        
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BG.jpeg")!)
+        //self.view.backgroundColor = UIColor.gray
         getAllTopSellSneakers()
     }
     
@@ -44,7 +43,8 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "slidePhoto", for: indexPath) as! PhotoSlideViewCell
             
             cell.photoCell.image = UIImage(named: photosArray[indexPath.row])
-            
+            cell.contentView.layer.cornerRadius = 10.0
+            cell.contentView.layer.masksToBounds = true
             //        var indexRow = indexPath.row
             //
             //        let numberImage : Int = self.photosArray.count - 1
@@ -65,17 +65,10 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
             let sneaker = topSellSneaker[indexPath.row]
             cell.topCellPhoto.image = sneaker.image
             
-            //        var indexRow = indexPath.row
-            //
-            //        let numberImage : Int = self.photosArray.count - 1
-            //
-            //        if(indexRow < numberImage){
-            //            indexRow = (indexRow + 1)
-            //        }else{
-            //            indexRow = 0
-            //        }
-            //
-            //        scrollingTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector( SlideShowMenuController.startTimer(theTimer:)), userInfo: indexRow, repeats: true)
+//            cell.contentView.layer.cornerRadius = 10.0
+//            cell.contentView.layer.masksToBounds = true
+//
+            cell.changeCorner(value: 20.0)
             
             return cell
             
@@ -114,7 +107,7 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
         }else{
             
             let screenSize = UIScreen.main.bounds
-            let widthValue = (screenSize.width / 2.0) * 0.5
+            let widthValue = (screenSize.width / 5.0)
             
             return CGSize(width: widthValue, height: widthValue)
             
@@ -123,7 +116,7 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return -1.5
+        return 15
     }
     
     
@@ -132,6 +125,35 @@ class SlideShowMenuController:UIViewController, UICollectionViewDataSource, UICo
         SneakerService.getSneakers{[weak self] (topSellSneaker) in
             self?.topSellSneaker = topSellSneaker
         }
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let detailVC = segue.destination as! DetailTopSellController
+//        let cell = sender as! TopCellViewCell
+//        let index = topSellCView?.indexPath(for: cell)
+//        detailVC.sneakerDetail = topSellSneaker[(index?.row)!]
+//
+//    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+//        let nav = segue.destination as! UINavigationController
+//        //let svc = nav.topViewController as! DetailTopSellController
+//
+//
+//        let senakerSeleccionadoRecibido = sender as! TopCellViewCell
+//
+//        let objetoPantalla2 = nav.topViewController as! DetailTopSellController
+//        let index = topSellCView?.indexPath(for: senakerSeleccionadoRecibido)
+//        objetoPantalla2.sneakerDetail = topSellSneaker[(index?.row)!]
+        
+        
+        let detailVC = segue.destination as! ChooseSneakerController
+        let cell = sender as! TopCellViewCell
+        let index = topSellCView?.indexPath(for: cell)
+        detailVC.sneakerDetail = topSellSneaker[(index?.row)!]
     }
     
     
