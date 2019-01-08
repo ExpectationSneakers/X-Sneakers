@@ -11,4 +11,11 @@ import UIKit
 class TopCellViewCell: UICollectionViewCell {
     
     @IBOutlet weak var topCellPhoto: UIImageView!
+    
+    
+    func changeCorner(value: CGFloat){
+        topCellPhoto.layer.cornerRadius = value
+        topCellPhoto.layer.masksToBounds = true
+    }
+    
 }
