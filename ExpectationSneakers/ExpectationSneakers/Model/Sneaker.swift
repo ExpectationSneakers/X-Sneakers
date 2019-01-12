@@ -14,6 +14,7 @@ struct Sneaker{
     let prices: Double
     let genre: String
     let description: String
+    let brand :String
     let sizes : [Size]
 }
 

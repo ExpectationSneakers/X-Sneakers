@@ -26,13 +26,13 @@ class SneakerService {
         let size3 = Size(size: "6.5")
         let size4 = Size(size: "7.5")
      
-        let sneaker1 = Sneaker(name: "Jordan III", image: #imageLiteral(resourceName: "Jordan3"), prices: 25.5, genre: "Male", description: descriptionJordan3, sizes: [size1,size3])
-        let sneaker2 = Sneaker(name: "Jordan I", image: #imageLiteral(resourceName: "Jordan4"), prices: 35.5, genre: "Male", description: descriptionJordan2, sizes: [size1,size2])
-        let sneaker3 = Sneaker(name: "Jordan II", image: #imageLiteral(resourceName: "Versace"), prices: 35.5, genre: "Male", description: descriptionJordan2, sizes: [size1,size4])
-        let sneaker4 = Sneaker(name: "Jordan X", image: #imageLiteral(resourceName: "Jordan3"), prices: 45.5, genre: "Male", description: descriptionJordanSpizike, sizes: [size4,size3])
-        let sneaker5 = Sneaker(name: "Jordan V", image: #imageLiteral(resourceName: "Jordan1"), prices: 65.5, genre: "Male", description: descriptionJordanSpizike, sizes: [size4])
-        let sneaker6 = Sneaker(name: "Jordan IV", image: #imageLiteral(resourceName: "Jordan4"), prices: 5.6, genre: "Male", description: descriptionJordan3, sizes: [size2,size3])
-        let sneaker7 = Sneaker(name: "Jordan VI", image: #imageLiteral(resourceName: "Jordan4") , prices: 75.5, genre: "Male", description: descriptionJordan3, sizes: [size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4])
+        let sneaker1 = Sneaker(name: "Jordan III", image: #imageLiteral(resourceName: "Jordan3"), prices: 25.5, genre: "Male", description: descriptionJordan3, brand: "Vans",sizes: [size1,size3])
+        let sneaker2 = Sneaker(name: "Jordan I", image: #imageLiteral(resourceName: "Jordan4"), prices: 35.5, genre: "Male", description: descriptionJordan2, brand: "Vans" ,sizes: [size1,size2])
+        let sneaker3 = Sneaker(name: "Jordan II", image: #imageLiteral(resourceName: "Versace"), prices: 35.5, genre: "Male", description: descriptionJordan2, brand: "Puma",sizes: [size1,size4])
+        let sneaker4 = Sneaker(name: "Jordan X", image: #imageLiteral(resourceName: "Jordan3"), prices: 45.5, genre: "Male", description: descriptionJordanSpizike, brand: "Air Jordan",sizes: [size4,size3])
+        let sneaker5 = Sneaker(name: "Jordan V", image: #imageLiteral(resourceName: "Jordan1"), prices: 65.5, genre: "Male", description: descriptionJordanSpizike, brand: "Air Jordan",sizes: [size4])
+        let sneaker6 = Sneaker(name: "Jordan IV", image: #imageLiteral(resourceName: "Jordan4"), prices: 5.6, genre: "Male", description: descriptionJordan3, brand: "Air Jordan",sizes: [size2,size3])
+        let sneaker7 = Sneaker(name: "Jordan VI", image: #imageLiteral(resourceName: "Jordan4") , prices: 75.5, genre: "Male", description: descriptionJordan3, brand: "Air Jordan",sizes: [size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4,size2,size4])
         
         
         let sneakersArray = [sneaker1, sneaker2, sneaker3, sneaker4, sneaker5, sneaker6, sneaker7]

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qel-Ko-LEv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Measure-->
+        <scene sceneID="sbW-ta-yKG">
+            <objects>
+                <viewController title="Measure" id="Qel-Ko-LEv" customClass="MeasureShoeViewController" customModule="ExpectationSneakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U9y-k3-eCQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgw-RU-ydK">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="691"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cargando Camara ..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-yp-7vv">
+                                <rect key="frame" x="42" y="84" width="290" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vgw-RU-ydK" firstAttribute="leading" secondItem="U9y-k3-eCQ" secondAttribute="leading" id="CXl-jk-7k7"/>
+                            <constraint firstItem="3VN-16-9hj" firstAttribute="bottom" secondItem="vgw-RU-ydK" secondAttribute="bottom" id="RgF-sI-jFJ"/>
+                            <constraint firstItem="3VN-16-9hj" firstAttribute="top" secondItem="vgw-RU-ydK" secondAttribute="top" constant="44" id="sbV-SY-rop"/>
+                            <constraint firstAttribute="trailing" secondItem="vgw-RU-ydK" secondAttribute="trailing" id="sti-xf-MAX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3VN-16-9hj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Measure" id="4qd-4K-1L8"/>
+                    <connections>
+                        <outlet property="lblMeasurementDetails" destination="ZAt-yp-7vv" id="dge-Um-5cN"/>
+                        <outlet property="scnView" destination="vgw-RU-ydK" id="cB6-3d-V9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zz-Ny-Cwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="-210.04497751124438"/>
+        </scene>
+    </scenes>
+</document>
