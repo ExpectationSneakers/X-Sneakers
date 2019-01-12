@@ -23,11 +23,12 @@
                     <connections>
                         <segue destination="Rgc-NW-gin" kind="relationship" relationship="viewControllers" id="iMp-ON-abh"/>
                         <segue destination="raK-Xb-mne" kind="relationship" relationship="viewControllers" id="e5w-lC-iMh"/>
+                        <segue destination="gFL-PZ-q1S" kind="relationship" relationship="viewControllers" id="7Md-e2-Oub"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrr-1c-EnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-527" y="108"/>
+            <point key="canvasLocation" x="-473" y="23"/>
         </scene>
         <!--SlideShowMenu-->
         <scene sceneID="pKG-fe-AyX">
@@ -39,15 +40,25 @@
             </objects>
             <point key="canvasLocation" x="257" y="-180"/>
         </scene>
-        <!--Main-->
+        <!--Brands-->
         <scene sceneID="oSY-Ke-Hzm">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="raK-Xb-mne" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Brands" id="raK-Xb-mne" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7UW-K7-Ifg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjn-Xb-nYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="210"/>
+            <point key="canvasLocation" x="257" y="22"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="9As-dx-Vgz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cart" id="gFL-PZ-q1S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="w6c-i8-Cxt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOe-UF-Zd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286" y="322"/>
         </scene>
     </scenes>
 </document>

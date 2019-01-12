@@ -12,7 +12,7 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var detailPhoto: UIImageView!
     
-    @IBOutlet weak var descriptionText: UITextView!
+   
     
     @IBOutlet weak var modelLabel: UILabel!
     
@@ -28,11 +28,13 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.tabBarController?.tabBar.isHidden = true
+        
+        
         sizeCollectionView.delegate = self
         sizeCollectionView.dataSource = self
         
         detailPhoto.image = sneakerDetail?.image
-        descriptionText.text = sneakerDetail?.description
         modelLabel.text = sneakerDetail?.name
         genreLabel.text = sneakerDetail?.genre
         
@@ -56,6 +58,15 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // Pause the view's session
+        //self.navigationController?.setNavigationBarHidden(false, animated: false)
+        //self.tabBarController?.tabBar.isHidden = false
+        
     }
     
     
