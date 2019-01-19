@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -21,6 +22,11 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
     
     var scrollingTimer = Timer()
     
+    var ref: DatabaseReference!
+    
+    var topSellSneakerFirebase = [SneakerFirebase]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +40,30 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "BG.jpeg")!)
         //self.view.backgroundColor = UIColor.gray
         getAllTopSellSneakers()
+        
+        ref = Database.database().reference(withPath: "sneaker-db")
+        
+        ref.observe(.value, with: { snapshot in
+            //print(snapshot.value as Any)
+             var newItems: [SneakerFirebase] = []
+            
+            for child in snapshot.children {
+                // 4
+                if let snapshot = child as? DataSnapshot,
+                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
+                    newItems.append(sneakerFirebaseItem)
+                }
+            }
+            
+            self.topSellSneakerFirebase = newItems
+            self.topSellCView.reloadData()
+            print("Cargado")
+        })
+        
+        
+        
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -63,7 +93,8 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTopSell", for: indexPath) as! TopCellViewCell
             let sneaker = topSellSneaker[indexPath.row]
-            cell.topCellPhoto.image = sneaker.image
+            let sneakerFirebase = topSellSneakerFirebase[indexPath.row]
+            cell.topCellPhoto.image = getImageFromBase64(base64: sneakerFirebase.image64)
             
 //            cell.contentView.layer.cornerRadius = 10.0
 //            cell.contentView.layer.masksToBounds = true
@@ -89,7 +120,7 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         if collectionView == self.slidePhotoCView{
             return photosArray.count
         }else{
-            return topSellSneaker.count
+            return topSellSneakerFirebase.count
         }
         
     }
@@ -154,6 +185,44 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         let cell = sender as! TopCellViewCell
         let index = topSellCView?.indexPath(for: cell)
         detailVC.sneakerDetail = topSellSneaker[(index?.row)!]
+    }
+    
+    
+    func getDataSneakerFirebase(){
+        ref = Database.database().reference(withPath: "sneaker-db")
+        
+        ref.observe(.value, with: { snapshot in
+            print(snapshot.value as Any)
+            
+            
+            for child in snapshot.children {
+                // 4
+                if let snapshot = child as? DataSnapshot,
+                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
+                    self.topSellSneakerFirebase.append(sneakerFirebaseItem)
+                }
+            }
+        })
+        
+        print(topSellSneakerFirebase.count)
+    }
+    
+    
+    func base64Convert(base64String: String?) -> UIImage{
+        if (base64String?.isEmpty)! {
+            return #imageLiteral(resourceName: "no_image_found")
+        }else {
+            // !!! Separation part is optional, depends on your Base64String !!!
+            let temp = base64String?.components(separatedBy: ",")
+            let dataDecoded : Data = Data(base64Encoded: temp![1], options: .ignoreUnknownCharacters)!
+            let decodedimage = UIImage(data: dataDecoded)
+            return decodedimage!
+        }
+    }
+    
+    func getImageFromBase64(base64:String) -> UIImage {
+        let data = Data(base64Encoded: base64)
+        return UIImage(data: data!)!
     }
     
     
