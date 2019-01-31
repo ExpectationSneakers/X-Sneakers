@@ -7,37 +7,30 @@
 //
 
 import UIKit
+import Firebase
 
 class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearchResultsUpdating {
     
     let arrayBrands : [String] = ["Air Jordan","Nike","Adidas","Reebok","Puma","Vans","Supra","New Balance","Converse","BAPE","Under Armour"]
     
+    @IBOutlet weak var loadIndicatorData: UIActivityIndicatorView!
     var filteredBrand = [String]()
-    
     
     var stockSneakers = [Sneaker]()
     
-   
+    var ref: DatabaseReference!
+    var stockSneakerFirebase = [SneakerFirebase]()
     
     let searchController = UISearchController(searchResultsController: nil)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadIndicatorData.startAnimating()
+        loadIndicatorData.centerXAnchor.constraint(equalTo: super.view.centerXAnchor).isActive = true
+        loadIndicatorData.centerYAnchor.constraint(equalTo: super.view.centerYAnchor).isActive = true
+        //getAllStockSneakers()
+        getDataSneakerFirebase()
         
-        getAllStockSneakers()
-        
-        filteredBrand = arrayBrands
-        self.tableView.tableHeaderView = searchController.searchBar
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.delegate = self
-        searchController.searchBar.barTintColor = UIColor.lightGray
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -52,18 +45,11 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
         return self.filteredBrand.count
     }
 
-   
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "brandCell", for: indexPath)
         //cell.textLabel?.text = arrayBrands[indexPath.row]
-        
-        
         cell.textLabel?.text = self.filteredBrand[indexPath.row]
-       
-        // Configure the cell...
-        
         return cell
     }
     
@@ -74,48 +60,8 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
     }
     
  
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    
-    
-    
+  
     func applySearch(searchText: String) {
-        
-        
         if searchController.searchBar.text! != "" {
             filteredBrand = arrayBrands.filter { brand in
                 return brand.lowercased().contains(searchText.lowercased())
@@ -138,7 +84,7 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewDidLoad()
+        //viewDidLoad()
         
         self.searchController.searchBar.isHidden = false
         self.tabBarController?.tabBar.isHidden = false
@@ -162,10 +108,35 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
     
     
     func getAllStockSneakers(){
-        
         SneakerService.getSneakers{[weak self] (stockSneakers) in
             self?.stockSneakers = stockSneakers
         }
+    }
+    
+    func getDataSneakerFirebase(){
+        ref = Database.database().reference(withPath: "sneaker-db")
+        
+        ref.observe(.value, with: { snapshot in
+            //  print(snapshot.value as Any)
+            for child in snapshot.children {
+                if let snapshot = child as? DataSnapshot,
+                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
+                    self.stockSneakerFirebase.append(sneakerFirebaseItem)
+                }
+            }
+            self.loadIndicatorData.stopAnimating()
+            self.loadIndicatorData.isHidden = true
+            self.filteredBrand = self.arrayBrands
+            self.tableView.tableHeaderView = self.searchController.searchBar
+            self.searchController.searchResultsUpdater = self
+            self.searchController.dimsBackgroundDuringPresentation = false
+            self.searchController.searchBar.delegate = self
+            self.searchController.searchBar.barTintColor = UIColor.lightGray
+            self.tableView.reloadData()
+            print(self.stockSneakerFirebase.count)
+        })
+        
+        
     }
     
     
@@ -176,7 +147,7 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
         
         let selectedBrand:String = arrayBrands[idBrand]
         //let index = UITableViewCell?.indexPath(for: row)
-        let filteredStock:[Sneaker] = stockSneakers.filter { sneaker in
+        let filteredStock:[SneakerFirebase] = stockSneakerFirebase.filter { sneaker in
             return sneaker.brand.lowercased().contains(selectedBrand.lowercased())
         }
         

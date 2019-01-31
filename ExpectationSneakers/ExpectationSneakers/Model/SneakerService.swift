@@ -9,6 +9,10 @@
 
 import UIKit
 
+struct idTransaction {
+    static var id: String = ""
+}
+
 class SneakerService {
     class func getSneakers(completion: @escaping ([Sneaker]) -> Void){
         

@@ -17,6 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="qtI-0a-vHl">
+                            <rect key="frame" x="0.0" y="72" width="375" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                            <color key="color" red="0.43921568630000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="brandCell" textLabel="q9q-m2-JFQ" detailTextLabel="7hc-sG-ZoR" style="IBUITableViewCellStyleValue1" id="SJ6-FU-BtG">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -50,6 +56,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="The Best Brands 4 U" id="72B-Lm-IAx"/>
                     <connections>
+                        <outlet property="loadIndicatorData" destination="qtI-0a-vHl" id="bEv-bS-1Xm"/>
                         <segue destination="0db-My-mBN" kind="show" identifier="segueStock" id="BDk-mb-3Vk"/>
                     </connections>
                 </tableViewController>

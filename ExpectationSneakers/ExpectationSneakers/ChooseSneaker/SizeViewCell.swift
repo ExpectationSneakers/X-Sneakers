@@ -11,12 +11,13 @@ import UIKit
 class SizeViewCell: UICollectionViewCell {
     
     @IBOutlet weak var sizeCellLabel: UILabel!
+    @IBOutlet weak var sizeLoadCellLabel: UILabel!
     
-    func propiertiesSizeCell(){
+    func propiertiesSizeCell(label : UILabel){
         
-        sizeCellLabel.layer.cornerRadius = 10.0
-        sizeCellLabel.layer.borderWidth = 2.0
-        sizeCellLabel.layer.borderColor = UIColor.black.cgColor
+        label.layer.cornerRadius = 10.0
+        label.layer.borderWidth = 2.0
+        label.layer.borderColor = UIColor.black.cgColor
         //sizeCellLabel.layer.shadowColor = UIColor.black.cgColor
         //sizeCellLabel.layer.masksToBounds = true
     }

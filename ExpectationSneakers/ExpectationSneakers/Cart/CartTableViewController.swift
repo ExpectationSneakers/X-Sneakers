@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class CartTableViewController: UITableViewController {
-
+    
+    var refCart: DatabaseReference!
+    var cartFirebase = [CartFirebase]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if(idTransaction.id != ""){
+            getDataSneakerFirebase()
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -24,23 +31,42 @@ class CartTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cartFirebase.count
+    }
+    
+    func getDataSneakerFirebase(){
+        refCart = Database.database().reference(withPath: "cart-db").child(idTransaction.id)
+        cartFirebase.removeAll()
+        refCart.observe(.value, with: { snapshot in
+            //  print(snapshot.value as Any)
+            for child in snapshot.children {
+                if let snapshot = child as? DataSnapshot,
+                    let cartFirebaseItem = CartFirebase(snapshot: snapshot) {
+                    self.cartFirebase.append(cartFirebaseItem)
+                }
+            }
+            self.tableView.reloadData()
+        })
+        
+        
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cartItem", for: indexPath)
 
         // Configure the cell...
+        
+        cell.textLabel?.text = cartFirebase[indexPath.row].model
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -86,5 +112,11 @@ class CartTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewDidLoad()
+    }
+    
+    
 
 }

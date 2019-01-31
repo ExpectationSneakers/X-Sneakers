@@ -41,24 +41,24 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         //self.view.backgroundColor = UIColor.gray
         getAllTopSellSneakers()
         
-        ref = Database.database().reference(withPath: "sneaker-db")
-        
-        ref.observe(.value, with: { snapshot in
-            //print(snapshot.value as Any)
-             var newItems: [SneakerFirebase] = []
-            
-            for child in snapshot.children {
-                // 4
-                if let snapshot = child as? DataSnapshot,
-                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
-                    newItems.append(sneakerFirebaseItem)
-                }
-            }
-            
-            self.topSellSneakerFirebase = newItems
-            self.topSellCView.reloadData()
-            print("Cargado")
-        })
+//        ref = Database.database().reference(withPath: "sneaker-db")
+//
+//        ref.observe(.value, with: { snapshot in
+//            //print(snapshot.value as Any)
+//             var newItems: [SneakerFirebase] = []
+//
+//            for child in snapshot.children {
+//                // 4
+//                if let snapshot = child as? DataSnapshot,
+//                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
+//                    newItems.append(sneakerFirebaseItem)
+//                }
+//            }
+//
+//            self.topSellSneakerFirebase = newItems
+//            self.topSellCView.reloadData()
+//            print("Cargado")
+//        })
         
         
         
@@ -93,9 +93,9 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTopSell", for: indexPath) as! TopCellViewCell
             let sneaker = topSellSneaker[indexPath.row]
-            let sneakerFirebase = topSellSneakerFirebase[indexPath.row]
-            cell.topCellPhoto.image = getImageFromBase64(base64: sneakerFirebase.image64)
-            
+            //let sneakerFirebase = topSellSneakerFirebase[indexPath.row]
+            //cell.topCellPhoto.image = getImageFromBase64(base64: sneakerFirebase.image64)
+            cell.topCellPhoto.image = sneaker.image
 //            cell.contentView.layer.cornerRadius = 10.0
 //            cell.contentView.layer.masksToBounds = true
 //
@@ -120,7 +120,8 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         if collectionView == self.slidePhotoCView{
             return photosArray.count
         }else{
-            return topSellSneakerFirebase.count
+            //return topSellSneakerFirebase.count
+            return topSellSneaker.count
         }
         
     }
