@@ -12,7 +12,6 @@
 		3E1DA56321E27726004FF573 /* SizeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DA56221E27726004FF573 /* SizeViewCell.swift */; };
 		3E69E52421E725000098FEE5 /* Stock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E69E52321E725000098FEE5 /* Stock.storyboard */; };
 		3E69E52621E7263E0098FEE5 /* StockCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E69E52521E7263E0098FEE5 /* StockCollectionController.swift */; };
-		3E6B785721F429C7007283CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E6B785621F429C7007283CB /* GoogleService-Info.plist */; };
 		3E88205021E585A60013B0C6 /* MainMeasure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E88204F21E585A60013B0C6 /* MainMeasure.storyboard */; };
 		3E88205621E585EA0013B0C6 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E88205121E585EA0013B0C6 /* add.png */; };
 		3E88205721E585EA0013B0C6 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E88205221E585EA0013B0C6 /* grid.png */; };
@@ -43,6 +42,11 @@
 		3EFBE7E621E6F78E00D1696C /* BrandsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFBE7E521E6F78E00D1696C /* BrandsTableController.swift */; };
 		3EFC768321FE93BB00D2E767 /* CartFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFC768221FE93BB00D2E767 /* CartFirebase.swift */; };
 		883A78226FCDA49DCDD95C71 /* Pods_ExpectationSneakers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC44FCF825CBF08379B3AF75 /* Pods_ExpectationSneakers.framework */; };
+		B8755C2822043C3300EFBC63 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8755C2722043C3300EFBC63 /* ThankYouViewController.swift */; };
+		B8755C2A220441EB00EFBC63 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8755C29220441EB00EFBC63 /* SAConfettiView.swift */; };
+		B8755C2D220450F900EFBC63 /* IdentifyModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8755C2C220450F900EFBC63 /* IdentifyModel.storyboard */; };
+		B8755C2F2204515C00EFBC63 /* IdentifyModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8755C2E2204515C00EFBC63 /* IdentifyModelViewController.swift */; };
+		B8755C3122045EB500EFBC63 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8755C3022045EB500EFBC63 /* ImageClassifier.mlmodel */; };
 		B8964C5721DD62730098E4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C5621DD62730098E4A9 /* AppDelegate.swift */; };
 		B8964C5921DD62730098E4A9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B8964C5821DD62730098E4A9 /* art.scnassets */; };
 		B8964C5B21DD62730098E4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C5A21DD62730098E4A9 /* ViewController.swift */; };
@@ -51,6 +55,9 @@
 		B8964C6321DD62750098E4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8964C6121DD62750098E4A9 /* LaunchScreen.storyboard */; };
 		B8964C6E21DD62750098E4A9 /* ExpectationSneakersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C6D21DD62750098E4A9 /* ExpectationSneakersTests.swift */; };
 		B8964C7921DD62750098E4A9 /* ExpectationSneakersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C7821DD62750098E4A9 /* ExpectationSneakersUITests.swift */; };
+		B8A8E76B2202C5C9006ACAFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8A8E76A2202C5C9006ACAFB /* GoogleService-Info.plist */; };
+		B8A8E7722202DB1C006ACAFB /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A8E7712202DB1C006ACAFB /* PayViewController.swift */; };
+		B8A8E7762202E2DD006ACAFB /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A8E7752202E2DD006ACAFB /* Pay.storyboard */; };
 		C28EA026B4A32B195009F36B /* Pods_ExpectationSneakersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A98AB5BAD2C39D614A1FDA2 /* Pods_ExpectationSneakersTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +84,6 @@
 		3E1DA56221E27726004FF573 /* SizeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewCell.swift; sourceTree = "<group>"; };
 		3E69E52321E725000098FEE5 /* Stock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stock.storyboard; sourceTree = "<group>"; };
 		3E69E52521E7263E0098FEE5 /* StockCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCollectionController.swift; sourceTree = "<group>"; };
-		3E6B785621F429C7007283CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E88204F21E585A60013B0C6 /* MainMeasure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMeasure.storyboard; sourceTree = "<group>"; };
 		3E88205121E585EA0013B0C6 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		3E88205221E585EA0013B0C6 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
@@ -113,6 +119,11 @@
 		9E2DAA031D9EA8E726EB277A /* Pods-ExpectationSneakersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpectationSneakersUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpectationSneakersUITests/Pods-ExpectationSneakersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A59034B58A36446ADEA1EAE1 /* Pods-ExpectationSneakers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpectationSneakers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpectationSneakers/Pods-ExpectationSneakers.debug.xcconfig"; sourceTree = "<group>"; };
 		AC44FCF825CBF08379B3AF75 /* Pods_ExpectationSneakers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpectationSneakers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8755C2722043C3300EFBC63 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		B8755C29220441EB00EFBC63 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
+		B8755C2C220450F900EFBC63 /* IdentifyModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentifyModel.storyboard; sourceTree = "<group>"; };
+		B8755C2E2204515C00EFBC63 /* IdentifyModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyModelViewController.swift; sourceTree = "<group>"; };
+		B8755C3022045EB500EFBC63 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 		B8964C5321DD62730098E4A9 /* ExpectationSneakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpectationSneakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8964C5621DD62730098E4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8964C5821DD62730098E4A9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -127,6 +138,9 @@
 		B8964C7421DD62750098E4A9 /* ExpectationSneakersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpectationSneakersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8964C7821DD62750098E4A9 /* ExpectationSneakersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectationSneakersUITests.swift; sourceTree = "<group>"; };
 		B8964C7A21DD62750098E4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A8E76A2202C5C9006ACAFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8A8E7712202DB1C006ACAFB /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		B8A8E7752202E2DD006ACAFB /* Pay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
 		C91FFE532B6F6815A3AC6C2F /* Pods-ExpectationSneakers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpectationSneakers.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpectationSneakers/Pods-ExpectationSneakers.release.xcconfig"; sourceTree = "<group>"; };
 		E77C44C1DF69154ABAD310F8 /* Pods-ExpectationSneakersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpectationSneakersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpectationSneakersTests/Pods-ExpectationSneakersTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +287,15 @@
 			path = Brands;
 			sourceTree = "<group>";
 		};
+		B8755C2B220450AA00EFBC63 /* IdentifyModel */ = {
+			isa = PBXGroup;
+			children = (
+				B8755C2C220450F900EFBC63 /* IdentifyModel.storyboard */,
+				B8755C2E2204515C00EFBC63 /* IdentifyModelViewController.swift */,
+			);
+			path = IdentifyModel;
+			sourceTree = "<group>";
+		};
 		B8964C4A21DD62730098E4A9 = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +321,8 @@
 		B8964C5521DD62730098E4A9 /* ExpectationSneakers */ = {
 			isa = PBXGroup;
 			children = (
+				B8755C2B220450AA00EFBC63 /* IdentifyModel */,
+				B8A8E76C2202DA66006ACAFB /* Pay */,
 				3EFAC74421EC3C8E005150D2 /* LoadSnaeker4User */,
 				3EF996F321E87CA700689F1B /* Cart */,
 				3E69E52221E724C60098FEE5 /* Stock */,
@@ -314,8 +339,9 @@
 				B8964C5F21DD62750098E4A9 /* Assets.xcassets */,
 				B8964C6121DD62750098E4A9 /* LaunchScreen.storyboard */,
 				B8964C6421DD62750098E4A9 /* Info.plist */,
+				B8A8E76A2202C5C9006ACAFB /* GoogleService-Info.plist */,
 				3E89298C21DF03FB00047EF1 /* MainTabBar.storyboard */,
-				3E6B785621F429C7007283CB /* GoogleService-Info.plist */,
+				B8755C3022045EB500EFBC63 /* ImageClassifier.mlmodel */,
 			);
 			path = ExpectationSneakers;
 			sourceTree = "<group>";
@@ -336,6 +362,17 @@
 				B8964C7A21DD62750098E4A9 /* Info.plist */,
 			);
 			path = ExpectationSneakersUITests;
+			sourceTree = "<group>";
+		};
+		B8A8E76C2202DA66006ACAFB /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				B8755C29220441EB00EFBC63 /* SAConfettiView.swift */,
+				B8A8E7712202DB1C006ACAFB /* PayViewController.swift */,
+				B8A8E7752202E2DD006ACAFB /* Pay.storyboard */,
+				B8755C2722043C3300EFBC63 /* ThankYouViewController.swift */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 		D09D8CCD26DE645465F5FC14 /* Pods */ = {
@@ -462,7 +499,9 @@
 				3EFBE7E421E6F74600D1696C /* Brands.storyboard in Resources */,
 				3EA2E4B021DE7DAC00179F6D /* SlideShowMenu.storyboard in Resources */,
 				3EFAC74621EC3CC3005150D2 /* LoadSneakerUser.storyboard in Resources */,
+				B8A8E7762202E2DD006ACAFB /* Pay.storyboard in Resources */,
 				B8964C5921DD62730098E4A9 /* art.scnassets in Resources */,
+				B8755C2D220450F900EFBC63 /* IdentifyModel.storyboard in Resources */,
 				3E69E52421E725000098FEE5 /* Stock.storyboard in Resources */,
 				3E88205721E585EA0013B0C6 /* grid.png in Resources */,
 				3EF7835721DFE43D000F42E7 /* ChooseSneaker.storyboard in Resources */,
@@ -471,7 +510,7 @@
 				3EFAF0CA21E45D240050DE45 /* MeasureShoesStoryboard.storyboard in Resources */,
 				3E89298D21DF03FB00047EF1 /* MainTabBar.storyboard in Resources */,
 				3E88205021E585A60013B0C6 /* MainMeasure.storyboard in Resources */,
-				3E6B785721F429C7007283CB /* GoogleService-Info.plist in Resources */,
+				B8A8E76B2202C5C9006ACAFB /* GoogleService-Info.plist in Resources */,
 				B8964C6021DD62750098E4A9 /* Assets.xcassets in Resources */,
 				B8964C5E21DD62730098E4A9 /* Main.storyboard in Resources */,
 				3EF996F521E87CC300689F1B /* Cart.storyboard in Resources */,
@@ -606,16 +645,21 @@
 				3EF996F221E83C6E00689F1B /* StockViewCell.swift in Sources */,
 				3E88205E21E5CB890013B0C6 /* TextNode.swift in Sources */,
 				3E89299221DF2A3700047EF1 /* Sneaker.swift in Sources */,
+				B8755C2822043C3300EFBC63 /* ThankYouViewController.swift in Sources */,
 				3E88205A21E585EA0013B0C6 /* Plane.swift in Sources */,
 				3EF7835921DFE835000F42E7 /* ChooseSneakerController.swift in Sources */,
 				3E89299421DF2BEB00047EF1 /* SneakerService.swift in Sources */,
+				B8755C2F2204515C00EFBC63 /* IdentifyModelViewController.swift in Sources */,
 				3E69E52621E7263E0098FEE5 /* StockCollectionController.swift in Sources */,
+				B8755C3122045EB500EFBC63 /* ImageClassifier.mlmodel in Sources */,
 				3EFAF0CE21E45DEB0050DE45 /* SphereNode.swift in Sources */,
 				3E88205821E585EA0013B0C6 /* ViewMeasureController.swift in Sources */,
+				B8755C2A220441EB00EFBC63 /* SAConfettiView.swift in Sources */,
 				3EFAC74A21EC41D0005150D2 /* SneakerFirebase.swift in Sources */,
 				B8964C5B21DD62730098E4A9 /* ViewController.swift in Sources */,
 				3EA2E4B821DE84FA00179F6D /* PhotoSlideViewCell.swift in Sources */,
 				3EF996F721E87DDB00689F1B /* CartTableViewController.swift in Sources */,
+				B8A8E7722202DB1C006ACAFB /* PayViewController.swift in Sources */,
 				3EFBE7E621E6F78E00D1696C /* BrandsTableController.swift in Sources */,
 				B8964C5721DD62730098E4A9 /* AppDelegate.swift in Sources */,
 				3EFAF0CC21E45D680050DE45 /* MeasureShoeViewController.swift in Sources */,
@@ -795,15 +839,17 @@
 			baseConfigurationReference = A59034B58A36446ADEA1EAE1 /* Pods-ExpectationSneakers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SF9ZG4WLFD;
+				DEVELOPMENT_TEAM = 33B4V79W5J;
 				INFOPLIST_FILE = ExpectationSneakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ExpectationSneakers;
+				PRODUCT_BUNDLE_IDENTIFIER = "BMO.X-Pago";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -814,15 +860,17 @@
 			baseConfigurationReference = C91FFE532B6F6815A3AC6C2F /* Pods-ExpectationSneakers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SF9ZG4WLFD;
+				DEVELOPMENT_TEAM = 33B4V79W5J;
 				INFOPLIST_FILE = ExpectationSneakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ExpectationSneakers;
+				PRODUCT_BUNDLE_IDENTIFIER = "BMO.X-Pago";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -21,6 +21,9 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y5b-cO-eom">
                                 <rect key="frame" x="16" y="158" width="343" height="145"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="ca0-pF-ths"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T4c-v6-FEj">
                                     <size key="itemSize" width="343" height="145"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,6 +40,9 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-Y5-0E1">
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="145" id="298-cY-L4V"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -62,6 +68,7 @@
                                 <rect key="frame" x="16" y="367" width="343" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="342" id="eAm-Im-Grt"/>
                                     <constraint firstAttribute="height" constant="342" id="xMW-uV-eWQ"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f6h-hh-9lz">
@@ -125,6 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="iB2-jW-tzK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sneaker" id="gXV-Tg-qGr"/>
+                    <size key="freeformSize" width="375" height="812"/>
                     <connections>
                         <outlet property="slidePhotoCView" destination="y5b-cO-eom" id="5yr-Ox-gxd"/>
                         <outlet property="topSellCView" destination="1J6-kl-PJc" id="2iG-G0-fEj"/>
@@ -149,6 +157,7 @@
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="6b8-VU-FeP"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="812"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wuI-D1-aJF">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

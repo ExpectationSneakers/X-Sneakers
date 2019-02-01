@@ -53,12 +53,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Cart" id="65L-3b-Ssa">
-                        <barButtonItem key="rightBarButtonItem" title="Buy" id="a4Z-Ti-nad" userLabel="Buy Button"/>
+                        <barButtonItem key="rightBarButtonItem" title="Buy" id="a4Z-Ti-nad" userLabel="Buy Button">
+                            <connections>
+                                <segue destination="8rc-TR-poL" kind="show" identifier="seguePay" id="Am9-9Y-PAC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy0-2I-wfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="-8.5457271364317844"/>
+            <point key="canvasLocation" x="1111" y="-9"/>
+        </scene>
+        <!--Pay-->
+        <scene sceneID="age-ub-KsP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Pay" id="8rc-TR-poL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmO-0N-V9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="-152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6ue-Vi-7jd">

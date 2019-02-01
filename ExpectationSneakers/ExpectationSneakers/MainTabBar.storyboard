@@ -25,6 +25,7 @@
                         <segue destination="raK-Xb-mne" kind="relationship" relationship="viewControllers" id="e5w-lC-iMh"/>
                         <segue destination="gFL-PZ-q1S" kind="relationship" relationship="viewControllers" id="7Md-e2-Oub"/>
                         <segue destination="cdB-tG-XXW" kind="relationship" relationship="viewControllers" id="Slo-AQ-180"/>
+                        <segue destination="bYB-Rs-zv4" kind="relationship" relationship="viewControllers" id="OeV-BV-IMp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrr-1c-EnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,11 +66,26 @@
         <scene sceneID="4J3-vw-pKR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Cart" id="cdB-tG-XXW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="TNH-cE-t2i"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Item" id="TNH-cE-t2i"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSU-L9-cRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="310"/>
         </scene>
+        <!--IdentifyModel-->
+        <scene sceneID="EL5-Eb-j5o">
+            <objects>
+                <viewControllerPlaceholder storyboardName="IdentifyModel" id="bYB-Rs-zv4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" largeContentSizeImage="iconMachine" systemItem="more" id="vyd-sd-3HI">
+                        <color key="badgeColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FT8-iE-48T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="477"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="iconMachine" width="25" height="25"/>
+    </resources>
 </document>

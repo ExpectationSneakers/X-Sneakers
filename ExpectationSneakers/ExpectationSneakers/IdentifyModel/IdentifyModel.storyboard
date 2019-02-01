@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ZB-ev-eRW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Identify Model View Controller-->
+        <scene sceneID="VoB-uB-5EL">
+            <objects>
+                <viewController id="9ZB-ev-eRW" customClass="IdentifyModelViewController" customModule="ExpectationSneakers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PXx-ib-h78">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kqj-g0-Sba">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zHJ-kO-kpk"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Identifica Sneakers" id="18T-3I-owr"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jordan1" translatesAutoresizingMaskIntoConstraints="NO" id="9nA-JH-IG2">
+                                <rect key="frame" x="16" y="85" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="343" id="e6j-8Z-UwK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IJ-8B-Q5V">
+                                <rect key="frame" x="16" y="438" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="U7m-KA-wIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZDD-44-htF">
+                                <rect key="frame" x="16" y="498" width="343" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx1-jE-sUg">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="70"/>
+                                        <state key="normal" title="Càmara"/>
+                                        <connections>
+                                            <action selector="tomarFoto:" destination="9ZB-ev-eRW" eventType="touchUpInside" id="61p-r7-xmc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-qM-vm1">
+                                        <rect key="frame" x="176.5" y="0.0" width="166.5" height="70"/>
+                                        <state key="normal" title="Galerìa"/>
+                                        <connections>
+                                            <action selector="seleccionarFoto:" destination="9ZB-ev-eRW" eventType="touchUpInside" id="DNa-TT-Jni"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="oQO-Yu-bcB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2IJ-8B-Q5V" firstAttribute="leading" secondItem="YWE-0Q-KRi" secondAttribute="leading" constant="16" id="2wJ-mc-H4E"/>
+                            <constraint firstItem="YWE-0Q-KRi" firstAttribute="trailing" secondItem="2IJ-8B-Q5V" secondAttribute="trailing" constant="16" id="Eia-Az-OHf"/>
+                            <constraint firstItem="ZDD-44-htF" firstAttribute="top" secondItem="2IJ-8B-Q5V" secondAttribute="bottom" constant="25" id="Lfg-iU-0Zu"/>
+                            <constraint firstItem="YWE-0Q-KRi" firstAttribute="trailing" secondItem="ZDD-44-htF" secondAttribute="trailing" constant="16" id="QeL-KR-OTt"/>
+                            <constraint firstItem="Kqj-g0-Sba" firstAttribute="top" secondItem="YWE-0Q-KRi" secondAttribute="top" id="UdK-0k-hRh"/>
+                            <constraint firstItem="2IJ-8B-Q5V" firstAttribute="top" secondItem="9nA-JH-IG2" secondAttribute="bottom" constant="10" id="cfg-Sf-5wg"/>
+                            <constraint firstItem="9nA-JH-IG2" firstAttribute="top" secondItem="Kqj-g0-Sba" secondAttribute="bottom" constant="20" id="dN3-Tl-ivk"/>
+                            <constraint firstItem="ZDD-44-htF" firstAttribute="leading" secondItem="YWE-0Q-KRi" secondAttribute="leading" constant="16" id="eE0-Qt-FOf"/>
+                            <constraint firstItem="9nA-JH-IG2" firstAttribute="leading" secondItem="YWE-0Q-KRi" secondAttribute="leading" constant="16" id="gow-uv-51g"/>
+                            <constraint firstItem="Kqj-g0-Sba" firstAttribute="leading" secondItem="YWE-0Q-KRi" secondAttribute="leading" id="igl-nn-qYw"/>
+                            <constraint firstItem="Kqj-g0-Sba" firstAttribute="trailing" secondItem="YWE-0Q-KRi" secondAttribute="trailing" id="mxf-Y3-kPj"/>
+                            <constraint firstItem="YWE-0Q-KRi" firstAttribute="trailing" secondItem="9nA-JH-IG2" secondAttribute="trailing" constant="16" id="yWO-iW-pNE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YWE-0Q-KRi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m1k-oW-kFD"/>
+                    <connections>
+                        <outlet property="dataImage" destination="9nA-JH-IG2" id="NV7-eW-yz4"/>
+                        <outlet property="dataLabel" destination="2IJ-8B-Q5V" id="iWG-HA-ZiW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHH-7i-9qR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jordan1" width="900" height="584"/>
+    </resources>
+</document>
