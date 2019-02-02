@@ -16,6 +16,13 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var sizeCollectionView: UICollectionView!
     @IBOutlet weak var sizeInfoLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    
+    @IBOutlet weak var ModelName: UILabel!
+    @IBOutlet weak var Pricelabel: UILabel!
+    @IBOutlet weak var tallaARK: UIButton!
+    @IBOutlet weak var addToCar: UIButton!
+    
+    
     var sneakerDetail: Sneaker?
     var sneakerDetailFirebase: SneakerFirebase?
     //Reference to size catalog node from sneaker node child
@@ -38,6 +45,14 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
         refCart = Database.database().reference(withPath: "cart-db")
         getDataSizeFirebase()
         
+        
+        tallaARK.layer.cornerRadius = 5
+        tallaARK.layer.borderWidth = 1
+        tallaARK.layer.borderColor = UIColor.lightGray.cgColor
+        
+        addToCar.layer.cornerRadius = 5
+        addToCar.layer.borderWidth = 1
+        addToCar.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     

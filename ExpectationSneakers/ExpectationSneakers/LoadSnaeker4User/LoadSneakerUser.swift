@@ -59,11 +59,11 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         addLabel.layer.cornerRadius = 5
         addLabel.layer.borderWidth = 1
-        addLabel.layer.borderColor = UIColor.lightGray.cgColor
+        addLabel.layer.borderColor = UIColor.blue.cgColor
         
         imagenCarga.layer.cornerRadius = 5
         imagenCarga.layer.borderWidth = 1
-        imagenCarga.layer.borderColor = UIColor.lightGray.cgColor
+        imagenCarga.layer.borderColor = UIColor.blue.cgColor
         
         tallasGroup.layer.cornerRadius = 5
         

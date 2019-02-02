@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="21" id="km8-aa-1mY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dio-hq-L5v">
@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="width" secondItem="Dio-hq-L5v" secondAttribute="height" multiplier="31:16" constant="89" id="eo6-en-wre"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLl-zh-HpF">
@@ -50,7 +50,7 @@
                                     <constraint firstAttribute="width" constant="151" id="xfM-Wh-Qdy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvy-zp-qdq">
@@ -59,12 +59,12 @@
                                     <constraint firstAttribute="width" secondItem="bvy-zp-qdq" secondAttribute="height" multiplier="31:16" constant="89" id="W6D-3e-jwE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OS0-uU-Moy">
                                 <rect key="frame" x="20" y="321" width="374" height="189"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OS0-uU-Moy" secondAttribute="height" multiplier="374:189" id="91g-ry-AZD"/>
                                 </constraints>
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="width" secondItem="3d8-t6-8oG" secondAttribute="height" multiplier="88:37" id="Z10-2P-58p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5x3-mj-ko7">
@@ -134,7 +134,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3d8-t6-8oG" firstAttribute="top" secondItem="4rH-30-b2x" secondAttribute="bottom" constant="83" id="29J-DE-Ez6"/>
                             <constraint firstItem="5x3-mj-ko7" firstAttribute="leading" secondItem="3d8-t6-8oG" secondAttribute="trailing" constant="8" symbolic="YES" id="3Tc-op-amQ"/>
@@ -177,10 +177,14 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ModelName" destination="Gre-HP-iKX" id="U0q-Yw-CWI"/>
+                        <outlet property="Pricelabel" destination="PLl-zh-HpF" id="Rb8-jT-zrA"/>
+                        <outlet property="addToCar" destination="8q0-fz-f75" id="zLQ-eo-vfw"/>
                         <outlet property="detailPhoto" destination="4rH-30-b2x" id="yaN-nZ-mjs"/>
                         <outlet property="modelLabel" destination="Dio-hq-L5v" id="735-zi-5Ec"/>
                         <outlet property="priceLabel" destination="bvy-zp-qdq" id="aP4-cB-iq9"/>
                         <outlet property="sizeCollectionView" destination="OS0-uU-Moy" id="kaa-ds-fNz"/>
+                        <outlet property="tallaARK" destination="5x3-mj-ko7" id="zSp-OI-MGE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4dg-f8-cyc" userLabel="First Responder" sceneMemberID="firstResponder"/>

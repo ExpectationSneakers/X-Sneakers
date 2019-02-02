@@ -38,8 +38,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-Y5-0E1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-Y5-0E1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="164"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="145" id="298-cY-L4V"/>
                                                     </constraints>
@@ -61,7 +61,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Arrivals" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jw0-cG-ZSY">
                                 <rect key="frame" x="16" y="129" width="116" height="27"/>
                                 <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1J6-kl-PJc">
@@ -98,7 +98,6 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="topCellPhoto" destination="zIv-2f-k6n" id="waK-dQ-QO4"/>
-                                            <segue destination="7a5-DO-1Ex" kind="show" id="RT1-1F-NGf"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -106,11 +105,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Sellers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4F-fN-iob">
                                 <rect key="frame" x="21" y="333" width="116" height="27"/>
                                 <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iB2-jW-tzK" firstAttribute="bottom" secondItem="1J6-kl-PJc" secondAttribute="bottom" constant="20" id="3oX-7h-0KP"/>
                             <constraint firstItem="iB2-jW-tzK" firstAttribute="trailing" secondItem="y5b-cO-eom" secondAttribute="trailing" constant="16" id="Bpe-Eg-9WF"/>
@@ -140,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rd6-W3-aMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039.2" y="295.50224887556226"/>
+            <point key="canvasLocation" x="1039.2" y="294.82758620689657"/>
         </scene>
         <!--ChooseSneaker-->
         <scene sceneID="jwD-TF-2cI">
@@ -161,7 +160,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wuI-D1-aJF">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

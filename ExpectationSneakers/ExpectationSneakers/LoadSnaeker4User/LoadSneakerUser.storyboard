@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Agregar a catalogo-->
+        <!--Add to Car-->
         <scene sceneID="rjy-Og-qw3">
             <objects>
                 <viewController id="aYK-Pf-IQC" customClass="LoadSneakerUser" customModule="ExpectationSneakers" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,18 +124,14 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4P3-Eo-I0v" secondAttribute="height" multiplier="56:15" id="WN8-I3-BqN"/>
                                 </constraints>
-                                <state key="normal" title="Pick Image">
-                                    <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Pick Image"/>
                                 <connections>
                                     <action selector="pickImage:" destination="aYK-Pf-IQC" eventType="touchUpInside" id="rRy-a9-8qz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAX-k3-Knr">
                                 <rect key="frame" x="192" y="700" width="30" height="30"/>
-                                <state key="normal" title="Add">
-                                    <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="add:" destination="aYK-Pf-IQC" eventType="touchUpInside" id="lq6-Gr-yy0"/>
                                 </connections>
@@ -184,7 +180,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y0H-dn-mU9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Agregar a catalogo" id="diW-G4-a3m"/>
+                    <navigationItem key="navigationItem" title="Add to Car" id="diW-G4-a3m"/>
                     <connections>
                         <outlet property="Brand" destination="j26-R7-GIe" id="PJT-dz-JvZ"/>
                         <outlet property="ModelLabel" destination="eBN-4f-5Hh" id="ooZ-d4-HhN"/>
@@ -213,6 +209,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FHD-rW-wBT">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
