@@ -12,12 +12,6 @@
 		3E1DA56321E27726004FF573 /* SizeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DA56221E27726004FF573 /* SizeViewCell.swift */; };
 		3E69E52421E725000098FEE5 /* Stock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E69E52321E725000098FEE5 /* Stock.storyboard */; };
 		3E69E52621E7263E0098FEE5 /* StockCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E69E52521E7263E0098FEE5 /* StockCollectionController.swift */; };
-		3E88205021E585A60013B0C6 /* MainMeasure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E88204F21E585A60013B0C6 /* MainMeasure.storyboard */; };
-		3E88205621E585EA0013B0C6 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E88205121E585EA0013B0C6 /* add.png */; };
-		3E88205721E585EA0013B0C6 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E88205221E585EA0013B0C6 /* grid.png */; };
-		3E88205821E585EA0013B0C6 /* ViewMeasureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88205321E585EA0013B0C6 /* ViewMeasureController.swift */; };
-		3E88205921E585EA0013B0C6 /* focus_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E88205421E585EA0013B0C6 /* focus_square.png */; };
-		3E88205A21E585EA0013B0C6 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88205521E585EA0013B0C6 /* Plane.swift */; };
 		3E88205C21E5BEFF0013B0C6 /* SCNSphere+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88205B21E5BEFF0013B0C6 /* SCNSphere+Init.swift */; };
 		3E88205E21E5CB890013B0C6 /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E88205D21E5CB890013B0C6 /* TextNode.swift */; };
 		3E89298D21DF03FB00047EF1 /* MainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E89298C21DF03FB00047EF1 /* MainTabBar.storyboard */; };
@@ -49,7 +43,6 @@
 		B8755C3122045EB500EFBC63 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B8755C3022045EB500EFBC63 /* ImageClassifier.mlmodel */; };
 		B8964C5721DD62730098E4A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C5621DD62730098E4A9 /* AppDelegate.swift */; };
 		B8964C5B21DD62730098E4A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C5A21DD62730098E4A9 /* ViewController.swift */; };
-		B8964C5E21DD62730098E4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8964C5C21DD62730098E4A9 /* Main.storyboard */; };
 		B8964C6021DD62750098E4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8964C5F21DD62750098E4A9 /* Assets.xcassets */; };
 		B8964C6321DD62750098E4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8964C6121DD62750098E4A9 /* LaunchScreen.storyboard */; };
 		B8964C6E21DD62750098E4A9 /* ExpectationSneakersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8964C6D21DD62750098E4A9 /* ExpectationSneakersTests.swift */; };
@@ -83,12 +76,6 @@
 		3E1DA56221E27726004FF573 /* SizeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewCell.swift; sourceTree = "<group>"; };
 		3E69E52321E725000098FEE5 /* Stock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stock.storyboard; sourceTree = "<group>"; };
 		3E69E52521E7263E0098FEE5 /* StockCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCollectionController.swift; sourceTree = "<group>"; };
-		3E88204F21E585A60013B0C6 /* MainMeasure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMeasure.storyboard; sourceTree = "<group>"; };
-		3E88205121E585EA0013B0C6 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
-		3E88205221E585EA0013B0C6 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
-		3E88205321E585EA0013B0C6 /* ViewMeasureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMeasureController.swift; sourceTree = "<group>"; };
-		3E88205421E585EA0013B0C6 /* focus_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = focus_square.png; sourceTree = "<group>"; };
-		3E88205521E585EA0013B0C6 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		3E88205B21E5BEFF0013B0C6 /* SCNSphere+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNSphere+Init.swift"; sourceTree = "<group>"; };
 		3E88205D21E5CB890013B0C6 /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 		3E89298C21DF03FB00047EF1 /* MainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBar.storyboard; sourceTree = "<group>"; };
@@ -126,7 +113,6 @@
 		B8964C5321DD62730098E4A9 /* ExpectationSneakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpectationSneakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8964C5621DD62730098E4A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8964C5A21DD62730098E4A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B8964C5D21DD62730098E4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8964C5F21DD62750098E4A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8964C6221DD62750098E4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8964C6421DD62750098E4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -189,19 +175,6 @@
 				3EF996F121E83C6E00689F1B /* StockViewCell.swift */,
 			);
 			path = Stock;
-			sourceTree = "<group>";
-		};
-		3E88204C21E5845B0013B0C6 /* MeasureRender */ = {
-			isa = PBXGroup;
-			children = (
-				3E88205121E585EA0013B0C6 /* add.png */,
-				3E88205421E585EA0013B0C6 /* focus_square.png */,
-				3E88205221E585EA0013B0C6 /* grid.png */,
-				3E88205521E585EA0013B0C6 /* Plane.swift */,
-				3E88205321E585EA0013B0C6 /* ViewMeasureController.swift */,
-				3E88204F21E585A60013B0C6 /* MainMeasure.storyboard */,
-			);
-			path = MeasureRender;
 			sourceTree = "<group>";
 		};
 		3E89299021DF2A1800047EF1 /* Model */ = {
@@ -325,14 +298,12 @@
 				3EF996F321E87CA700689F1B /* Cart */,
 				3E69E52221E724C60098FEE5 /* Stock */,
 				3EFBE7E221E6F6E800D1696C /* Brands */,
-				3E88204C21E5845B0013B0C6 /* MeasureRender */,
 				3EFAF0C821E45B0A0050DE45 /* Measure */,
 				3E89299021DF2A1800047EF1 /* Model */,
 				3EF7835521DFC88F000F42E7 /* ChooseSneaker */,
 				3EA2E4B221DE7E3500179F6D /* SlideShowMenu */,
 				B8964C5621DD62730098E4A9 /* AppDelegate.swift */,
 				B8964C5A21DD62730098E4A9 /* ViewController.swift */,
-				B8964C5C21DD62730098E4A9 /* Main.storyboard */,
 				B8964C5F21DD62750098E4A9 /* Assets.xcassets */,
 				B8964C6121DD62750098E4A9 /* LaunchScreen.storyboard */,
 				B8964C6421DD62750098E4A9 /* Info.plist */,
@@ -499,18 +470,13 @@
 				B8A8E7762202E2DD006ACAFB /* Pay.storyboard in Resources */,
 				B8755C2D220450F900EFBC63 /* IdentifyModel.storyboard in Resources */,
 				3E69E52421E725000098FEE5 /* Stock.storyboard in Resources */,
-				3E88205721E585EA0013B0C6 /* grid.png in Resources */,
 				3EF7835721DFE43D000F42E7 /* ChooseSneaker.storyboard in Resources */,
-				3E88205621E585EA0013B0C6 /* add.png in Resources */,
 				B8964C6321DD62750098E4A9 /* LaunchScreen.storyboard in Resources */,
 				3EFAF0CA21E45D240050DE45 /* MeasureShoesStoryboard.storyboard in Resources */,
 				3E89298D21DF03FB00047EF1 /* MainTabBar.storyboard in Resources */,
-				3E88205021E585A60013B0C6 /* MainMeasure.storyboard in Resources */,
 				B8A8E76B2202C5C9006ACAFB /* GoogleService-Info.plist in Resources */,
 				B8964C6021DD62750098E4A9 /* Assets.xcassets in Resources */,
-				B8964C5E21DD62730098E4A9 /* Main.storyboard in Resources */,
 				3EF996F521E87CC300689F1B /* Cart.storyboard in Resources */,
-				3E88205921E585EA0013B0C6 /* focus_square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,14 +608,12 @@
 				3E88205E21E5CB890013B0C6 /* TextNode.swift in Sources */,
 				3E89299221DF2A3700047EF1 /* Sneaker.swift in Sources */,
 				B8755C2822043C3300EFBC63 /* ThankYouViewController.swift in Sources */,
-				3E88205A21E585EA0013B0C6 /* Plane.swift in Sources */,
 				3EF7835921DFE835000F42E7 /* ChooseSneakerController.swift in Sources */,
 				3E89299421DF2BEB00047EF1 /* SneakerService.swift in Sources */,
 				B8755C2F2204515C00EFBC63 /* IdentifyModelViewController.swift in Sources */,
 				3E69E52621E7263E0098FEE5 /* StockCollectionController.swift in Sources */,
 				B8755C3122045EB500EFBC63 /* ImageClassifier.mlmodel in Sources */,
 				3EFAF0CE21E45DEB0050DE45 /* SphereNode.swift in Sources */,
-				3E88205821E585EA0013B0C6 /* ViewMeasureController.swift in Sources */,
 				B8755C2A220441EB00EFBC63 /* SAConfettiView.swift in Sources */,
 				3EFAC74A21EC41D0005150D2 /* SneakerFirebase.swift in Sources */,
 				B8964C5B21DD62730098E4A9 /* ViewController.swift in Sources */,
@@ -695,14 +659,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B8964C5C21DD62730098E4A9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8964C5D21DD62730098E4A9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B8964C6121DD62750098E4A9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

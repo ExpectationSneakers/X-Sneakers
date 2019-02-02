@@ -45,7 +45,6 @@ class CartTableViewController: UITableViewController {
         refCart = Database.database().reference(withPath: "cart-db").child(idTransaction.id)
         cartFirebase.removeAll()
         refCart.observe(.value, with: { snapshot in
-            //  print(snapshot.value as Any)
             for child in snapshot.children {
                 if let snapshot = child as? DataSnapshot,
                     let cartFirebaseItem = CartFirebase(snapshot: snapshot) {

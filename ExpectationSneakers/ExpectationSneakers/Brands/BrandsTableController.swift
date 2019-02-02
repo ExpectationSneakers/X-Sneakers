@@ -117,7 +117,6 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
         ref = Database.database().reference(withPath: "sneaker-db")
         
         ref.observe(.value, with: { snapshot in
-            //  print(snapshot.value as Any)
             for child in snapshot.children {
                 if let snapshot = child as? DataSnapshot,
                     let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
@@ -133,7 +132,7 @@ class BrandsTableController: UITableViewController, UISearchBarDelegate, UISearc
             self.searchController.searchBar.delegate = self
             self.searchController.searchBar.barTintColor = UIColor.lightGray
             self.tableView.reloadData()
-            print(self.stockSneakerFirebase.count)
+            
         })
         
         

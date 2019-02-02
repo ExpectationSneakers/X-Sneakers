@@ -117,7 +117,7 @@ class ChooseSneakerController : UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(sizeCollection[indexPath.row].size)
+        
         let alert = UIAlertController(title: "There are \(sizeCollection[indexPath.row].count) items on stock",
                                       message: "Add a Quantity",
                                       preferredStyle: .alert)

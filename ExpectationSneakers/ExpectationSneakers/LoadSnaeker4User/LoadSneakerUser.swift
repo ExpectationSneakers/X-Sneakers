@@ -167,7 +167,6 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
                 if let error = error {
                     print("Data could not be saved: \(error).")
                 } else {
-                    print("Data saved successfully!")
                     //Add sizes to sneaker and save on database
                     self.saveSneakerSizes(modelSneaker: model.lowercased())
                     let alert = UIAlertController(title: "Saved", message: "Snaker info was saved", preferredStyle: .alert)
@@ -229,7 +228,7 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
         }
         
         // do something interesting here!
-        print(newImage.size)
+     
         pickedImage.image = newImage
         
         dismiss(animated: true)
@@ -255,7 +254,7 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
     
    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(sizeCollection[indexPath.row].size)
+        
         let alert = UIAlertController(title: "Quantity Sizes Available",
                                       message: "Add a Quantity",
                                       preferredStyle: .alert)

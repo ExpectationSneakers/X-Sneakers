@@ -41,24 +41,6 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         //self.view.backgroundColor = UIColor.gray
         getAllTopSellSneakers()
         
-//        ref = Database.database().reference(withPath: "sneaker-db")
-//
-//        ref.observe(.value, with: { snapshot in
-//            //print(snapshot.value as Any)
-//             var newItems: [SneakerFirebase] = []
-//
-//            for child in snapshot.children {
-//                // 4
-//                if let snapshot = child as? DataSnapshot,
-//                    let sneakerFirebaseItem = SneakerFirebase(snapshot: snapshot) {
-//                    newItems.append(sneakerFirebaseItem)
-//                }
-//            }
-//
-//            self.topSellSneakerFirebase = newItems
-//            self.topSellCView.reloadData()
-//            print("Cargado")
-//        })
         
         
         navigationController?.tabBarItem.image = UIImage(named: "Home40")?.withRenderingMode(.alwaysOriginal)
@@ -201,7 +183,6 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
         ref = Database.database().reference(withPath: "sneaker-db")
         
         ref.observe(.value, with: { snapshot in
-            print(snapshot.value as Any)
             
             
             for child in snapshot.children {
@@ -213,7 +194,7 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
             }
         })
         
-        print(topSellSneakerFirebase.count)
+    
     }
     
     

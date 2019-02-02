@@ -44,10 +44,7 @@ class IdentifyModelViewController: UIViewController, UIImagePickerControllerDele
         // Do any additional setup after loading the view.
     }
     
-    @objc func fbButtonPressed() {
-        
-        print("Share to fb")
-    }
+   
     
     @IBAction func tomarFoto(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera){
