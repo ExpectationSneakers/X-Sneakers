@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Load Sneaker User-->
+        <!--Agregar a catalogo-->
         <scene sceneID="rjy-Og-qw3">
             <objects>
                 <viewController id="aYK-Pf-IQC" customClass="LoadSneakerUser" customModule="ExpectationSneakers" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,8 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2YP-SQ-vCf">
                                 <rect key="frame" x="20" y="451.33333333333326" width="374" height="241"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="tintColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2YP-SQ-vCf" secondAttribute="height" multiplier="374:241" id="r3F-jH-8gA"/>
                                 </constraints>
@@ -47,7 +48,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfS-Ga-8Qf">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -64,31 +65,31 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-4f-5Hh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-4f-5Hh">
                                 <rect key="frame" x="20" y="102" width="131" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eBN-4f-5Hh" secondAttribute="height" multiplier="131:30" id="gjB-kD-kML"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price $$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-e7-SoO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price $$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGR-e7-SoO">
                                 <rect key="frame" x="20" y="153" width="131" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MGR-e7-SoO" secondAttribute="height" multiplier="131:30" id="nOY-ag-8IZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j26-R7-GIe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j26-R7-GIe">
                                 <rect key="frame" x="20" y="208" width="131" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="j26-R7-GIe" secondAttribute="height" multiplier="131:30" id="qJL-dB-Qd8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiG-Sy-yMv">
@@ -123,20 +124,24 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4P3-Eo-I0v" secondAttribute="height" multiplier="56:15" id="WN8-I3-BqN"/>
                                 </constraints>
-                                <state key="normal" title="Pick Image"/>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="pickImage:" destination="aYK-Pf-IQC" eventType="touchUpInside" id="rRy-a9-8qz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAX-k3-Knr">
                                 <rect key="frame" x="192" y="700" width="30" height="30"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="add:" destination="aYK-Pf-IQC" eventType="touchUpInside" id="lq6-Gr-yy0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eBN-4f-5Hh" firstAttribute="leading" secondItem="MGR-e7-SoO" secondAttribute="leading" id="238-xw-V6G"/>
                             <constraint firstItem="Y0H-dn-mU9" firstAttribute="trailing" secondItem="jaj-It-sYZ" secondAttribute="trailing" constant="20" id="369-lR-oKH"/>
@@ -179,13 +184,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y0H-dn-mU9"/>
                     </view>
-                    <navigationItem key="navigationItem" id="diW-G4-a3m"/>
+                    <navigationItem key="navigationItem" title="Agregar a catalogo" id="diW-G4-a3m"/>
                     <connections>
+                        <outlet property="Brand" destination="j26-R7-GIe" id="PJT-dz-JvZ"/>
+                        <outlet property="ModelLabel" destination="eBN-4f-5Hh" id="ooZ-d4-HhN"/>
+                        <outlet property="Price" destination="MGR-e7-SoO" id="LfI-g2-NFF"/>
+                        <outlet property="addImage" destination="4P3-Eo-I0v" id="aOh-oM-fpc"/>
+                        <outlet property="addLabel" destination="IAX-k3-Knr" id="eh6-Cb-R4T"/>
+                        <outlet property="imagenCarga" destination="aES-mv-3oa" id="kWq-GK-eaa"/>
                         <outlet property="labelBrand" destination="qD4-ai-s6X" id="P2L-RX-tZs"/>
                         <outlet property="labelModel" destination="oiG-Sy-yMv" id="jgm-mR-1CG"/>
                         <outlet property="labelPrice" destination="jaj-It-sYZ" id="vbq-20-dGz"/>
                         <outlet property="pickedImage" destination="aES-mv-3oa" id="BMy-4o-Ayb"/>
                         <outlet property="sizeCollectionView" destination="2YP-SQ-vCf" id="dUA-tQ-xB4"/>
+                        <outlet property="tallasGroup" destination="2YP-SQ-vCf" id="5sx-B2-AJ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjV-4f-vAo" userLabel="First Responder" sceneMemberID="firstResponder"/>

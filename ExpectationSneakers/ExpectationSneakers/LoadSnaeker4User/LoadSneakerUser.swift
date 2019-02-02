@@ -26,7 +26,13 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
     @IBOutlet weak var labelPrice: UITextField!
     @IBOutlet weak var pickedImage: UIImageView!
     @IBOutlet weak var labelBrand: UITextField!
-    
+    @IBOutlet weak var addLabel: UIButton!
+    @IBOutlet weak var addImage: UIButton!
+    @IBOutlet weak var Brand: UILabel!
+    @IBOutlet weak var Price: UILabel!
+    @IBOutlet weak var ModelLabel: UILabel!
+    @IBOutlet weak var imagenCarga: UIImageView!
+    @IBOutlet weak var tallasGroup: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +40,34 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
         sizeCollectionView.dataSource = self
         ref = Database.database().reference(withPath: "sneaker-db")
         getDataSizeFirebase()
+        
+        ModelLabel.layer.cornerRadius = 5
+        ModelLabel.layer.borderWidth = 1
+        ModelLabel.layer.borderColor = UIColor.lightGray.cgColor
+        
+        Price.layer.cornerRadius = 5
+        Price.layer.borderWidth = 1
+        Price.layer.borderColor = UIColor.lightGray.cgColor
+        
+        Brand.layer.cornerRadius = 5
+        Brand.layer.borderWidth = 1
+        Brand.layer.borderColor = UIColor.lightGray.cgColor
+        
+        addImage.layer.cornerRadius = 5
+        addImage.layer.borderWidth = 1
+        addImage.layer.borderColor = UIColor.lightGray.cgColor
+        
+        addLabel.layer.cornerRadius = 5
+        addLabel.layer.borderWidth = 1
+        addLabel.layer.borderColor = UIColor.lightGray.cgColor
+        
+        imagenCarga.layer.cornerRadius = 5
+        imagenCarga.layer.borderWidth = 1
+        imagenCarga.layer.borderColor = UIColor.lightGray.cgColor
+        
+        tallasGroup.layer.cornerRadius = 5
+        
+        
         
     }
     

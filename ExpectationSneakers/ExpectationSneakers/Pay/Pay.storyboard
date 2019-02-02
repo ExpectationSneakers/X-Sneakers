@@ -33,7 +33,9 @@
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-np-Nrg">
                                         <rect key="frame" x="182.5" y="0.0" width="172.5" height="80"/>
-                                        <state key="normal" title="Otra Tarjeta"/>
+                                        <state key="normal" title="Otra Tarjeta">
+                                            <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -46,11 +48,11 @@
                                     <constraint firstAttribute="height" constant="35" id="lyZ-4B-ILD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lGk-w2-L3x" firstAttribute="top" secondItem="Oz0-NF-JPY" secondAttribute="bottom" constant="10" id="2N5-Rt-6RD"/>
                             <constraint firstItem="X5E-yq-9Pz" firstAttribute="top" secondItem="lGk-w2-L3x" secondAttribute="bottom" constant="15" id="7lg-KH-lu4"/>
@@ -100,6 +102,7 @@
                                 <items>
                                     <navigationItem title="Gracias por su compra" id="6aS-Gk-yfl">
                                         <barButtonItem key="leftBarButtonItem" title="Volver" id="GUd-Ox-Ban">
+                                            <color key="tintColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="volverButton:" destination="rDc-3P-mCh" id="AuT-Go-2Z0"/>
                                             </connections>

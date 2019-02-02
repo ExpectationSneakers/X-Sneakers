@@ -23,6 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zHJ-kO-kpk"/>
                                 </constraints>
+                                <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Identifica Sneakers" id="18T-3I-owr"/>
                                 </items>
@@ -39,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="35" id="U7m-KA-wIl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZDD-44-htF">
@@ -47,14 +48,18 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx1-jE-sUg">
                                         <rect key="frame" x="0.0" y="0.0" width="166.5" height="70"/>
-                                        <state key="normal" title="Càmara"/>
+                                        <state key="normal" title="Càmara">
+                                            <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="tomarFoto:" destination="9ZB-ev-eRW" eventType="touchUpInside" id="61p-r7-xmc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-qM-vm1">
                                         <rect key="frame" x="176.5" y="0.0" width="166.5" height="70"/>
-                                        <state key="normal" title="Galerìa"/>
+                                        <state key="normal" title="Galerìa">
+                                            <color key="titleColor" red="0.65490196079999996" green="0.46666666670000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="seleccionarFoto:" destination="9ZB-ev-eRW" eventType="touchUpInside" id="DNa-TT-Jni"/>
                                         </connections>
@@ -65,7 +70,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2IJ-8B-Q5V" firstAttribute="leading" secondItem="YWE-0Q-KRi" secondAttribute="leading" constant="16" id="2wJ-mc-H4E"/>
                             <constraint firstItem="YWE-0Q-KRi" firstAttribute="trailing" secondItem="2IJ-8B-Q5V" secondAttribute="trailing" constant="16" id="Eia-Az-OHf"/>
@@ -84,13 +89,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="m1k-oW-kFD"/>
                     <connections>
+                        <outlet property="camaraButton" destination="Wx1-jE-sUg" id="XUa-wg-Unz"/>
                         <outlet property="dataImage" destination="9nA-JH-IG2" id="NV7-eW-yz4"/>
                         <outlet property="dataLabel" destination="2IJ-8B-Q5V" id="iWG-HA-ZiW"/>
+                        <outlet property="galeriaButton" destination="jYv-qM-vm1" id="vzR-DN-eim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHH-7i-9qR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="188.45577211394306"/>
+            <point key="canvasLocation" x="3898.4000000000001" y="188.45577211394306"/>
         </scene>
     </scenes>
     <resources>

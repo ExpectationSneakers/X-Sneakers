@@ -18,14 +18,35 @@ class IdentifyModelViewController: UIViewController, UIImagePickerControllerDele
     
     @IBOutlet weak var dataLabel: UILabel!
     
-
+    @IBOutlet weak var camaraButton: UIButton!
+    @IBOutlet weak var galeriaButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         detectarImagenes()
+        
+        
+        camaraButton.layer.cornerRadius = 5
+        camaraButton.layer.borderWidth = 1
+        camaraButton.layer.borderColor = UIColor.lightGray.cgColor
+        
+        galeriaButton.layer.cornerRadius = 5
+        galeriaButton.layer.borderWidth = 1
+        galeriaButton.layer.borderColor = UIColor.lightGray.cgColor
+        
+        dataLabel.layer.cornerRadius = 5
+        dataLabel.layer.borderWidth = 1
+        dataLabel.layer.borderColor = UIColor.lightGray.cgColor
+        
+        dataImage.layer.cornerRadius = 5
+        dataImage.layer.borderWidth = 1
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func fbButtonPressed() {
+        
+        print("Share to fb")
     }
     
     @IBAction func tomarFoto(_ sender: Any) {

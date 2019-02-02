@@ -26,9 +26,21 @@ class PayViewController: UIViewController, PKPaymentAuthorizationViewControllerD
 
         // Do any additional setup after loading the view.
         
+        applePayView.layer.cornerRadius = 5
+        applePayView.layer.borderWidth = 1
+        applePayView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        totalLabel.layer.cornerRadius = 5
+        totalLabel.layer.borderWidth = 1
+        totalLabel.layer.borderColor = UIColor.lightGray.cgColor
+        
+        otraTarjetaLabel.layer.cornerRadius = 5
+        otraTarjetaLabel.layer.borderWidth = 1
+        otraTarjetaLabel.layer.borderColor = UIColor.lightGray.cgColor
+        
         self.view.layoutIfNeeded()
         
-        let applePayButton = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .black)
+        let applePayButton = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .white)
         
         applePayButton.addTarget(self, action: #selector(applePayPressed), for: .touchUpInside)
         
