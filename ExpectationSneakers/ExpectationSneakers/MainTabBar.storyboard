@@ -36,7 +36,7 @@
         <scene sceneID="pKG-fe-AyX">
             <objects>
                 <viewControllerPlaceholder storyboardName="SlideShowMenu" id="Rgc-NW-gin" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Uuw-WM-Bws"/>
+                    <tabBarItem key="tabBarItem" title="" id="Uuw-WM-Bws"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWe-Ek-SQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +46,7 @@
         <scene sceneID="oSY-Ke-Hzm">
             <objects>
                 <viewControllerPlaceholder storyboardName="Brands" id="raK-Xb-mne" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7UW-K7-Ifg"/>
+                    <tabBarItem key="tabBarItem" title="" id="7UW-K7-Ifg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjn-Xb-nYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +56,7 @@
         <scene sceneID="9As-dx-Vgz">
             <objects>
                 <viewControllerPlaceholder storyboardName="LoadSneakerUser" id="gFL-PZ-q1S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="w6c-i8-Cxt"/>
+                    <tabBarItem key="tabBarItem" title="" id="w6c-i8-Cxt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOe-UF-Zd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +66,7 @@
         <scene sceneID="4J3-vw-pKR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Cart" id="cdB-tG-XXW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" enabled="NO" title="Item" id="TNH-cE-t2i"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="TNH-cE-t2i"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSU-L9-cRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

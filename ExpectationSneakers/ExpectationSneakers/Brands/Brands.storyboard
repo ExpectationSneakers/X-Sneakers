@@ -77,7 +77,7 @@
         <scene sceneID="k8P-Rw-Drv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l75-Zi-5XE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="oVt-r4-iJx"/>
+                    <tabBarItem key="tabBarItem" id="oVt-r4-iJx"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XIh-4C-2Xe">

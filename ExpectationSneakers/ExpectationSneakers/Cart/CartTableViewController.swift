@@ -25,6 +25,8 @@ class CartTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //navigationController?.tabBarItem.image = UIImage(named: "Cart40")?.withRenderingMode(.alwaysOriginal)
+        
     }
 
     // MARK: - Table view data source

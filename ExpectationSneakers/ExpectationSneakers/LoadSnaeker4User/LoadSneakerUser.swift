@@ -259,7 +259,7 @@ class LoadSneakerUser: UIViewController, UIImagePickerControllerDelegate, UINavi
         let alert = UIAlertController(title: "Quantity Sizes Available",
                                       message: "Add a Quantity",
                                       preferredStyle: .alert)
-        let saveAction = UIAlertAction(title: "Save", style: .default) { _ in
+        let saveAction = UIAlertAction(title: "Ok", style: .default) { _ in
             let textField = alert.textFields![0]
             let valor = Int(textField.text!) ?? 0
             self.sizeCollection[indexPath.row].count = valor

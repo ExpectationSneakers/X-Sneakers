@@ -61,7 +61,15 @@ class SlideShowMenuController: UIViewController, UICollectionViewDataSource, UIC
 //        })
         
         
-        
+        navigationController?.tabBarItem.image = UIImage(named: "Home40")?.withRenderingMode(.alwaysOriginal)
+        let tabBrands = navigationController?.tabBarController?.tabBar.items![1]
+        tabBrands?.image = UIImage(named: "Brands50")?.withRenderingMode(.alwaysOriginal)
+        let tabUserLoad = navigationController?.tabBarController?.tabBar.items![2]
+        tabUserLoad?.image = UIImage(named: "load57")?.withRenderingMode(.alwaysOriginal)
+        let tabUserCart = navigationController?.tabBarController?.tabBar.items![3]
+        tabUserCart?.image = UIImage(named: "Cart40")?.withRenderingMode(.alwaysOriginal)
+        let tabUserMachine = navigationController?.tabBarController?.tabBar.items![4]
+        tabUserMachine?.image = UIImage(named: "Machine58")?.withRenderingMode(.alwaysOriginal)
         
         
     }

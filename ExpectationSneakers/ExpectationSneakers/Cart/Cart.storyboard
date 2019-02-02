@@ -82,7 +82,7 @@
         <scene sceneID="6ue-Vi-7jd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dli-8I-TaU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Enc-0M-cRH"/>
+                    <tabBarItem key="tabBarItem" id="Enc-0M-cRH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bsJ-q4-hTu">
